@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/RegistrationForm/static/css/main.7cfec894.css",
+    "main.js": "/RegistrationForm/static/js/main.15c2a6ee.js",
+    "static/media/background-1024.webp": "/RegistrationForm/static/media/background-1024.70f2ef650b9d7efcf90f.webp",
+    "static/media/background-768.webp": "/RegistrationForm/static/media/background-768.f29512604793d7febdeb.webp",
+    "static/media/background-360.webp": "/RegistrationForm/static/media/background-360.222aa9334a68e7ac57a3.webp",
+    "index.html": "/RegistrationForm/index.html",
+    "main.7cfec894.css.map": "/RegistrationForm/static/css/main.7cfec894.css.map",
+    "main.15c2a6ee.js.map": "/RegistrationForm/static/js/main.15c2a6ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cfec894.css",
+    "static/js/main.15c2a6ee.js"
+  ]
+}
