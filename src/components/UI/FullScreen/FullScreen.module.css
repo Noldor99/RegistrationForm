@@ -1,0 +1,25 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("./image/background-1024.webp");
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 140px;
+}
+
+ 
+  @media screen and (max-width: 768px) {
+    .bg {
+      background: url("./image/background-768.webp") no-repeat center;
+      background-size: cover; } }
+  @media screen and (max-width: 500px) {
+    .bg {
+      background: url("./image/background-360.webp") no-repeat center;
+      background-size: cover; 
+      margin-bottom: 70px;
+    } }
