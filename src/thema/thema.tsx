@@ -1,8 +1,20 @@
 import { createTheme } from '@mui/material/styles';
+import { ButtonProps } from '@mui/material/Button';
 
-const defaultTheme = createTheme();
- 
+
+
+interface SimpleButtonProps extends ButtonProps {
+  stylebutton?: 'simple';
+}
+
+interface SimpleLargeButtonProps extends ButtonProps {
+  stylebutton?: 'simple';
+  size?: 'large';
+}
+
+
 export const theme = createTheme({
+
   palette: {
 
     secondary: {
@@ -19,7 +31,7 @@ export const theme = createTheme({
     MuiButton: {
       variants: [
         {
-          props: { stylebutton: 'simple' },
+          props: { stylebutton: 'simple' } as SimpleButtonProps,
           style: {
             borderRadius: '25px',
             width: '100px',
@@ -27,10 +39,10 @@ export const theme = createTheme({
           },
         },
         {
-          props: { stylebutton: 'simple', size: 'large' },
+          props: { stylebutton: 'simple', size: 'large' } as SimpleLargeButtonProps,
           style: {
             width: '140px',
-    
+
           },
         },
       ],

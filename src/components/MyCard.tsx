@@ -5,21 +5,27 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
+import { IUser } from '../type/type';
+import { FC } from 'react';
 
-const MyCard = ({user}) => {
+interface CardProps {
+  user: IUser
+}
+
+const MyCard: FC<CardProps> = ({ user }: CardProps) => {
   return (
-    <Card sx={{ 
- 
+    <Card sx={{
+
       display: 'flex',
-      alignItems: 'center', 
-      justifyContent: 'center', 
+      alignItems: 'center',
+      justifyContent: 'center',
       flexDirection: 'column',
-      padding: '20px' 
+      padding: '20px'
     }}>
 
       <Avatar sx={{ bgcolor: 'red[500]' }} aria-label="recipe">
-            <img src={user.photo} alt="" />
-      </Avatar> 
+        <img src={user.photo} alt="" />
+      </Avatar>
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         {user.name}
       </Typography>
@@ -32,8 +38,8 @@ const MyCard = ({user}) => {
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         {user.phone}
       </Typography>
- 
-  </Card>
+
+    </Card>
   )
 }
 
